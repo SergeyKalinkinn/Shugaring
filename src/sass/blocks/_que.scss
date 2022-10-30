@@ -1,0 +1,46 @@
+.que {    
+    padding-top: 90px;        
+    &__title {
+        margin-bottom: 30px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 54px;
+    }
+    &__collapsible {
+        position: relative;
+        margin-bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);        
+        background-color: #f3b7e7;
+        color: $main-color;
+        cursor: pointer;
+        padding: 18px;
+        width: 50%;
+        border: 2px solid #FBFF22;
+        border-radius: 3px;
+        text-align: center;
+        outline: none;
+        font-size: 20px;        
+        &:hover, &:active {
+            background-color: #555;
+        } 
+        &:focus {
+            outline: none;
+        }                             
+    }
+    &__content {
+        position: relative;
+        padding: 0;        
+        left: 50%;
+        transform: translateX(-50%);  
+        max-width: 50%;      
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .2s ease-out;        
+    }
+    &__text {
+        color: #000;
+    }
+}
+

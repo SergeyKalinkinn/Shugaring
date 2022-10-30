@@ -1,0 +1,125 @@
+.header {
+    max-width: 100%;
+    position: relative;
+
+    &__wrapper {
+        padding: 25px 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__find-me {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__find-me-link {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        color: $main-color;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+            color: $main-color;
+        }
+    }
+
+    &__social-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 25px;
+    }
+
+    &__social-link {
+        padding: 0;
+        margin: 0;                
+    }
+    .fa-brands {   
+        transition: all .8s;     
+        &:hover {
+            color: #FBFF22;
+        }
+    }
+
+    &__right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+
+    &__right-list {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+
+    &__right-item {
+        list-style-type: none;
+    }
+
+    &__right-link {
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        transition: all .6s;
+
+        &:hover {
+            text-decoration: none;
+            color: #FBFF22;
+        }
+    }
+
+    &__right-contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }    
+
+    &__right-number {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        transition: all .6s;
+        &:hover {
+            text-decoration: none;
+            color: #FBFF22;
+        }
+    }
+
+    &__right-btn {
+        width: 170px;
+        height: 40px;
+        border: 2px solid #FBFF22;
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        transition: all .7s;        
+        &:hover {            
+            color: #FBFF22;            
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+}
